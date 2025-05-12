@@ -1,10 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RD Print & Design Solutions</title>
+  <meta charset="UTF-8">
+  <title>RD Print & Design Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
 </head>
 <body>
-<h1>Welcome to RD Print & Design Solutions</h1>
-<p>Home Page</p>
+  <nav>
+    <a href="#home" onclick="navigate('home')">Home</a>
+    <a href="#about" onclick="navigate('about')">About</a>
+    <a href="#portfolio" onclick="navigate('portfolio')">Portfolio</a>
+    <a href="#contact" onclick="navigate('contact')">Contact</a>
+    <select id="languageToggle" onchange="toggleLanguage()">
+      <option value="en">English</option>
+      <option value="as">অসমীয়া</option>
+    </select>
+  </nav>
+  <main id="content">Loading...</main>
 </body>
 </html>
